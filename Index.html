@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PublicSafetyData.org</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; }
+    header { background: #111; color: #fff; padding: 2em; text-align: center; }
+    .cta { background: #e63946; color: #fff; padding: 1em; border: none; font-size: 1.2em; cursor: pointer; }
+    section { padding: 2em; }
+    .offer { background: #fff; margin-bottom: 1em; padding: 1em; border-radius: 5px; }
+    form { background: #fff; padding: 2em; border-radius: 5px; }
+    input, select, textarea { width: 100%; margin-bottom: 1em; padding: 0.5em; }
+    footer { background: #222; color: #ccc; text-align: center; padding: 1em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PublicSafetyData.org</h1>
+    <p>Forensic Data. Tactical Restitution. No Permission Needed.</p>
+    <button class="cta" onclick="document.getElementById('intake').scrollIntoView()">Deploy Now</button>
+  </header>
+
+  <section>
+    <div class="offer">
+      <h2>Forensic Grant Audit</h2>
+      <p>Identify misused federal funds and recover what’s owed. Flat-fee audit + escalation memo.</p>
+      <button class="cta">Request Audit</button>
+    </div>
+    <div class="offer">
+      <h2>Restitution Ledger Setup</h2>
+      <p>Document harm, quantify denied services, and invoice institutions. Tactical ledger deployment.</p>
+      <button class="cta">Setup Ledger</button>
+    </div>
+    <div class="offer">
+      <h2>FOIA + Refund Escalation</h2>
+      <p>Recover funds taken in error. Monthly support for claims, memos, and public escalation.</p>
+      <button class="cta">Escalate Now</button>
+    </div>
+  </section>
+
+  <section id="intake">
+    <h2>Deploy Your Claim</h2>
+    <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <input type="text" name="Organization" placeholder="Organization (if any)" />
+      <textarea name="Harm" placeholder="What harm are you documenting?" required></textarea>
+      <select name="Support">
+        <option value="">Select Support Needed</option>
+        <option value="Audit">Forensic Grant Audit</option>
+        <option value="Ledger">Restitution Ledger Setup</option>
+        <option value="Escalation">FOIA + Refund Escalation</option>
+        <option value="Policy">Harm-Based Policy Drafting</option>
+      </select>
+      <button class="cta" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact: Hope McDonald | PublicSafetyData.org</p>
+    <p>This site does not seek permission. It documents harm and operationalizes restitution.</p>
+  </footer>
+</body>
+</html>
